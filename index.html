@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dapur Rasa - Kuliner Nusantara</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- File CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav>
+      <div class="logo">Dapur<span>Rasa.</span></div>
+      <ul>
+        <li><a href="#home">Beranda</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+      <a href="#menu" class="nav-button">Pesan Sekarang</a>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero" id="home">
+      <div class="hero-content">
+        <div class="tagline">HIDANGAN NUSANTARA</div>
+        <h1>Nikmati Rasa,<br /><span>Cintai Kuliner</span></h1>
+        <p>
+          Sajian lezat dengan bahan pilihan dan cita rasa autentik. Temukan
+          makanan favoritmu bersama Dapur Rasa.
+        </p>
+        <a href="#menu" class="button"
+          >Jelajahi Menu <i data-feather="arrow-right"></i
+        ></a>
+      </div>
+      <div class="hero-image">
+        <img
+          src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1000&q=85"
+          alt="Hidangan makanan segar"
+        />
+      </div>
+    </header>
+
+    <!-- MENU -->
+    <section id="menu">
+      <div class="section-title">
+        <h2>Menu Favorit</h2>
+        <p>Pilihan makanan lezat yang siap memanjakan lidahmu.</p>
+      </div>
+
+      <div class="menu-container">
+        <div class="menu-card">
+          <img
+            src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=800&q=80"
+            alt="Nasi goreng"
+          />
+          <div class="menu-info">
+            <h3>Nasi Goreng Spesial</h3>
+            <p>Nasi goreng dengan bumbu khas dan topping pilihan.</p>
+            <div class="menu-bottom">
+              <span class="price">Rp25.000</span>
+              <button class="order-button" data-menu="Nasi Goreng Spesial">
+                Pesan
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img
+            src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=800&q=80"
+            alt="Mie"
+          />
+          <div class="menu-info">
+            <h3>Mie Pedas Nusantara</h3>
+            <p>Mie gurih dengan racikan rempah dan sensasi pedas.</p>
+            <div class="menu-bottom">
+              <span class="price">Rp20.000</span>
+              <button class="order-button" data-menu="Mie Pedas Nusantara">
+                Pesan
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img
+            src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80"
+            alt="Hidangan ayam"
+          />
+          <div class="menu-info">
+            <h3>Ayam Bakar Istimewa</h3>
+            <p>Ayam berbumbu rempah dengan aroma bakaran menggoda.</p>
+            <div class="menu-bottom">
+              <span class="price">Rp30.000</span>
+              <button class="order-button" data-menu="Ayam Bakar Istimewa">
+                Pesan
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="about-content">
+        <div class="section-title"><h2>Tentang Dapur Rasa</h2></div>
+        <p>
+          Dapur Rasa hadir untuk memperkenalkan kelezatan kuliner Nusantara
+          dengan bahan berkualitas, penyajian menarik, dan pelayanan ramah. Kami
+          percaya bahwa makanan bukan hanya soal rasa, tetapi juga kebahagiaan.
+        </p>
+        <a href="#contact" class="button">Hubungi Kami</a>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="contact-content">
+        <div class="section-title">
+          <h2>Hubungi Kami</h2>
+          <p>Punya pertanyaan atau ingin memesan makanan?</p>
+        </div>
+        <p><i data-feather="map-pin"></i> Indonesia</p>
+        <p><i data-feather="clock"></i> Setiap hari, 09.00–21.00</p>
+        <a href="#menu" class="button">Lihat Menu Kami</a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>&copy; 2026 <span>Dapur Rasa.</span> Website Kuliner Nusantara.</p>
+    </footer>
+
+    <!-- File JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>

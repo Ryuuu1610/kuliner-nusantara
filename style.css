@@ -1,0 +1,315 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #fffaf5;
+  color: #33251f;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background: #fff;
+  box-shadow: 0 2px 10px #0000000d;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: 700;
+  color: #c65324;
+}
+
+.logo span {
+  color: #33251f;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: #33251f;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+nav ul a:hover {
+  color: #c65324;
+}
+
+.nav-button {
+  background: #c65324;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* HERO */
+.hero {
+  min-height: 570px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 70px 8%;
+  background: #fff1e4;
+}
+
+.hero-content,
+.hero-image {
+  flex: 1;
+}
+
+.hero-content h1 {
+  font-size: clamp(35px, 5vw, 55px);
+  line-height: 1.25;
+  margin: 15px 0;
+}
+
+.hero-content h1 span {
+  color: #c65324;
+}
+
+.hero-content p {
+  color: #78675e;
+  line-height: 1.9;
+  max-width: 480px;
+  margin-bottom: 25px;
+}
+
+.tagline {
+  color: #c65324;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.button {
+  display: inline-block;
+  padding: 13px 23px;
+  background: #c65324;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background: #9f3e19;
+  transform: translateY(-2px);
+}
+
+.hero-image {
+  text-align: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 480px;
+  height: 370px;
+  object-fit: cover;
+  border-radius: 30px;
+  box-shadow: 0 15px 35px #6d351c26;
+}
+
+/* SECTION */
+section {
+  padding: 75px 8%;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.section-title p {
+  color: #87766c;
+  font-size: 14px;
+}
+
+/* MENU */
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.menu-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px #0000000a;
+  transition: 0.3s;
+}
+
+.menu-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 12px 25px #00000015;
+}
+
+.menu-card img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+}
+
+.menu-info {
+  padding: 20px;
+}
+.menu-info h3 {
+  margin-bottom: 8px;
+}
+
+.menu-info p {
+  font-size: 13px;
+  color: #87766c;
+  line-height: 1.7;
+  min-height: 44px;
+}
+
+.menu-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 18px;
+}
+
+.price {
+  color: #c65324;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.order-button {
+  border: none;
+  background: #c65324;
+  color: white;
+  padding: 9px 12px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.order-button:hover {
+  background: #9f3e19;
+}
+
+/* ABOUT */
+.about {
+  background: #fff1e4;
+  text-align: center;
+}
+
+.about-content {
+  max-width: 700px;
+  margin: auto;
+}
+
+.about-content p {
+  line-height: 2;
+  color: #78675e;
+  margin-bottom: 25px;
+}
+
+/* CONTACT */
+.contact-content {
+  text-align: center;
+}
+
+.contact-content p {
+  color: #78675e;
+  margin: 12px 0 25px;
+}
+
+/* FOOTER */
+footer {
+  background: #33251f;
+  color: white;
+  padding: 25px 8%;
+  text-align: center;
+  font-size: 13px;
+}
+
+footer span {
+  color: #ffad79;
+}
+
+/* RESPONSIVE */
+@media (max-width: 850px) {
+  nav {
+    padding: 18px 5%;
+  }
+  nav ul {
+    gap: 14px;
+  }
+  .hero {
+    padding: 50px 5%;
+  }
+  section {
+    padding: 60px 5%;
+  }
+  .menu-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  nav ul {
+    width: 100%;
+    justify-content: center;
+    gap: 18px;
+  }
+
+  nav ul a {
+    font-size: 12px;
+  }
+  .nav-button {
+    display: none;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-image img {
+    height: 260px;
+  }
+  .menu-container {
+    grid-template-columns: 1fr;
+  }
+  .section-title h2 {
+    font-size: 27px;
+  }
+}
